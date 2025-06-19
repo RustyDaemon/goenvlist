@@ -5,13 +5,13 @@ import (
 	"os"
 	"strings"
 
-	"github.com/RustyDaemon/goenvlist/internal"
+	"github.com/RustyDaemon/goenvlist/core"
 	"github.com/fatih/color"
 	"github.com/spf13/cobra"
 )
 
 var (
-	options = internal.NewOptions()
+	options = core.NewOptions()
 
 	rootCmd = &cobra.Command{
 		Use:   "goenvlist",
@@ -38,12 +38,12 @@ func init() {
 }
 
 func run() error {
-	variables, err := internal.GetEnvironment()
+	variables, err := core.GetEnvironment()
 	if err != nil {
 		return fmt.Errorf("error getting environment variables: %w", err)
 	}
 
-	formatter := internal.NewFormatter(options, variables)
+	formatter := core.NewFormatter(options, variables)
 	formatter.Display()
 
 	return nil
