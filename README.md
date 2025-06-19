@@ -12,6 +12,11 @@ A simple cross-platform CLI tool for displaying environment variables with advan
 - Color-coded output for better readability
 - Raw output mode for scripting
 
+## Installation
+
+- Clone the repo and build it manually via `go build cmd/main.go`
+- OR install the tool globally via `go install github.com/RustyDaemon/goenvlist@latest`
+
 ## Usage
 
 ```bash

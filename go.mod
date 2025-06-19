@@ -1,4 +1,4 @@
-module goenvlist
+module github.com/RustyDaemon/goenvlist
 
 go 1.24.4
 
