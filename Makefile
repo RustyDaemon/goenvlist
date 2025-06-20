@@ -1,6 +1,6 @@
 BINARY_NAME = goenvlist
 BINARY_UNIX = $(BINARY_NAME)_unix
-MAIN_PATH = ./cmd/main.go
+MAIN_PATH = ./main.go
 
 .PHONY: all build clean help
 
